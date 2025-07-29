@@ -1,0 +1,15 @@
+h1 {
+    color: white; 
+    background-color: #0040ad;
+    padding: 20px;
+    margin: 0;
+    font-family: "Noto Sans JP", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    }
+
+body {
+    margin: 0;
+    text-align: center;
+}
