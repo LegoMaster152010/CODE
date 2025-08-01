@@ -2,7 +2,12 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 32px;
-    background: #0b23af
-    height: 80px;
+    padding: 32px 5px;
+    background: #142dc0;
+    height: 60px;
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
 }
