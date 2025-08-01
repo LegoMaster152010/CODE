@@ -11,13 +11,20 @@
 .navbar-left {
     display: flex;
     align-items: center;
+    gap: 50%;
 }
 
 .navbar-logo {
     height: 80px;
     width: 80px;
     margin: 15px;
-    margin-right: 50px;
+}
+
+.navbar-title {
+    color: white;
+    font-family: "roboto", sans-serif;
+    font-weight: bold;
+    font-size: 2rem;
 }
 
 body {
