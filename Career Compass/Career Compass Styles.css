@@ -14,11 +14,10 @@
 }
 
 .navbar-logo {
-    height: 60px;
-    width: 60px;
+    height: 4em;
+    width: auto;
     margin: 15px;
 }
-
 .navbar-title {
     color: white;
     font-family: "roboto", sans-serif;
@@ -53,6 +52,31 @@ body {
     margin: 0;
 }
 
-.burger menu {
-    display: flex
+.login-btn {
+    color: black; 
+    text-decoration: none;
+    font-family: "roboto", sans-serif;
+    font-weight: 650;
+    padding: 15px 30px;
+    border-radius: 8px;
+    background-color: white;
+}
+
+.line {
+    width: 60px;
+    height: 5px;
+    background: white;
+    margin: 6px 0;
+    border-radius: 4px;
+}
+
+.burger-menu {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    margin: 0px 25px 0px 31px;
 }
