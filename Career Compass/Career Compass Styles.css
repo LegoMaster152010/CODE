@@ -18,8 +18,9 @@
     width: auto;
     margin: 15px 20px;
 }
-.navbar-title {
+.navbar-title a{
     color: white;
+    text-decoration: none;
     font-family: "roboto", sans-serif;
     font-weight: bold;
     font-size: 1.8rem;
