@@ -93,7 +93,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: calc(100vh - 40px);
+    min-height: 50vh;
+    height: auto;
     padding: 0;
     box-sizing: border-box;
     margin: 0;
@@ -102,7 +103,7 @@ body {
 .hero-image {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
     display: block;
 }
 
@@ -126,6 +127,13 @@ body {
 .hero-text h1 {
     font-size: 3rem;
     margin-bottom: 20px;
+    color: black;
+    font-family: "Roboto", sans-serif;
+}
+
+.hero-text p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
     color: black;
     font-family: "Roboto", sans-serif;
 }
