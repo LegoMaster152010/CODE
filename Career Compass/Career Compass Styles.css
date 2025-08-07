@@ -137,3 +137,19 @@ body {
     color: black;
     font-family: "Roboto", sans-serif;
 }
+
+.welcome-banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #142dc0;
+    height: 100px;
+}
+
+.welcome-banner-text {
+    color: white;
+    font-size: 2rem;
+    font-family: "Playwrite AU QLD", cursive;
+    text-align: center;
+    margin: 0;
+}
