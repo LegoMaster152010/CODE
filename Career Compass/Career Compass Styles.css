@@ -4,7 +4,7 @@
     align-items: center;
     justify-content: space-between;
     padding: 25px 5px;
-    background: #142dc0;
+    background: rgb(15, 15, 176);
     height: 40px;
 }
 
@@ -89,6 +89,7 @@ body {
     margin: 0px 25px 0px 31px;
 }
 
+/* ======= Hero Section ======= */
 .hero-section {
     display: flex;
     align-items: center;
@@ -138,11 +139,12 @@ body {
     font-family: "Roboto", sans-serif;
 }
 
+/* ======= Welcome Banner ======= */
 .welcome-banner {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #142dc0;
+    background-color: rgb(15, 15, 176);
     height: 100px;
 }
 
@@ -153,3 +155,4 @@ body {
     text-align: center;
     margin: 0;
 }
+
