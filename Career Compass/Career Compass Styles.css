@@ -1,3 +1,9 @@
+html, body {
+margin: 0;
+padding: 0;
+background-color: #fefbf3;
+}
+
 /* ======= Navbar ======= */
 .navbar {
     display: flex;
@@ -51,12 +57,6 @@
     color: #000000;
     background-color: white;
 }
-
-body {
-    margin: 0;
-    padding: 0;
-}
-
 
 .login-btn {
     color: black; 
@@ -156,3 +156,4 @@ body {
     margin: 0;
 }
 
+/* ======= Featured Schools Section ======= */
