@@ -157,3 +157,6 @@ background-color: #fefbf3;
 }
 
 /* ======= Featured Schools Section ======= */
+.featured-section {
+    display: flex;
+    background: fefbf3;
