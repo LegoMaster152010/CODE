@@ -1,0 +1,48 @@
+body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: #111;
+    }
+
+    /* Decorative container */
+    .carousel-container {
+      position: relative;
+      width: 500px;   /* adjust to your liking */
+      height: 300px;
+      background: url("background.png") center/cover no-repeat;
+      overflow: hidden;
+      border-radius: 20px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+    }
+
+    /* Slider track */
+    .carousel-track {
+      display: flex;
+      transition: transform 0.8s ease-in-out;
+      height: 100%;
+    }
+
+    /* Each logo slide */
+    .carousel-slide {
+      flex: 0 0 70%; /* smaller than container so neighbors peek */
+      margin: 0 15px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .carousel-slide img {
+      max-width: 100%;
+      max-height: 80%;
+      object-fit: contain;
+      filter: drop-shadow(0 5px 10px rgba(0,0,0,0.5));
+      transition: transform 0.3s;
+    }
+
+    .carousel-slide img:hover {
+      transform: scale(1.05);
+    }

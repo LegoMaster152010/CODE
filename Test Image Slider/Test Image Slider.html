@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>School Logos Sliding Carousel</title>
+  <link rel="stylesheet" href="Test Image Slider Styles.css">
+</head>
+<body>
+
+  <div class="carousel-container">
+    <div class="carousel-track">
+      <div class="carousel-slide"><img src="logo1.png" alt="Logo 1"></div>
+      <div class="carousel-slide"><img src="logo2.png" alt="Logo 2"></div>
+      <div class="carousel-slide"><img src="logo3.png" alt="Logo 3"></div>
+      <div class="carousel-slide"><img src="logo4.png" alt="Logo 4"></div>
+      <div class="carousel-slide"><img src="logo5.png" alt="Logo 5"></div>
+    </div>
+  </div>
+
+  <script>
+    const track = document.querySelector('.carousel-track');
+    const slides = document.querySelectorAll('.carousel-slide');
+    let currentIndex = 0;
+
+    function updateSlide() {
+      const slideWidth = slides[0].offsetWidth + 30; // slide width + margin
+      const container = document.querySelector('.carousel-container').offsetWidth;
+      const offset = (container - slideWidth) / 2; // center active slide
+      track.style.transform = `translateX(${-currentIndex * slideWidth + offset}px)`;
+    }
+
+    setInterval(() => {
+      currentIndex = (currentIndex + 1) % slides.length;
+      updateSlide();
+    }, 5000);
+
+    // Run once on load
+    window.addEventListener("load", updateSlide);
+    window.addEventListener("resize", updateSlide);
+  </script>
+
+</body>
+</html>
