@@ -211,7 +211,7 @@ html, body {
   justify-content: center;
   width: 25vw;
   height: 50vh;
-  background: url("https://t3.ftcdn.net/jpg/16/09/43/08/360_F_1609430888_6rMPLvfDSG2JeDCsqIhvyJ4HvL5P0M9X.png") center/cover no-repeat; /*I need to download this photo into the folder*/
+  background: url("images/featured-number-background.png") center/cover no-repeat;
   background-size: 30vw;
 }
 
@@ -255,8 +255,4 @@ html, body {
 
 .carousel-slide img:hover {
   transform: scale(1.05);
-}
-
-.logo1 {
-  background-image: url(https://img.favpng.com/10/25/21/logo-construction-organization-png-favpng-ZtdSc1gg1SR8tqCbzaf5eKZvK.jpg);
 }
