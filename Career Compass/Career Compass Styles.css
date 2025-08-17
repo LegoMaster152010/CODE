@@ -185,15 +185,17 @@ html, body {
   flex: 3;
   flex-direction: column;
   justify-content: center;
+  background: blue;
 }
 
 .featured-count {
-  align-items: center;
   display: flex;
-  flex: 1;
+  align-items: center;
   justify-content: center;
+  width: 22vw;
+  height: 42vh;
+  background: url("https://t3.ftcdn.net/jpg/16/09/43/08/360_F_1609430888_6rMPLvfDSG2JeDCsqIhvyJ4HvL5P0M9X.png");
 }
-
 .featured-image {
   width: 700px;
 }
@@ -209,7 +211,6 @@ html, body {
   font-family: var(--font-family-cursive);
   font-size: 5rem;
   font-weight: bold;
-  margin-right: 7vw;
 }
 
 .featured-button {
