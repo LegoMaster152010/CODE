@@ -32,6 +32,7 @@ html, body {
   height: 4em;
   width: auto;
   margin: 15px 20px;
+  background-image: url("https://icons-for-free.com/iff/png/256/compass-131994967719933980.png") cover/contain no-repeat;
 }
 
 .navbar-title a {
@@ -175,10 +176,6 @@ html, body {
   height: 50vh;
 }
 
-.featured-schools {
-  display: flex;
-}
-
 .featured-info {
   align-items: center;
   display: flex;
@@ -229,7 +226,7 @@ html, body {
   position: relative;
   width: 34vw;
   height: 50vh;
-  background: url("C:/Users/Naman/Downloads/CODE/career-compass/images/background.png") center/cover no-repeat;
+  background: url("images/featured-carousel-background.png") center/contain no-repeat;
   overflow: hidden;
 
 }
@@ -258,4 +255,8 @@ html, body {
 
 .carousel-slide img:hover {
   transform: scale(1.05);
+}
+
+.logo1 {
+  background-image: url(https://img.favpng.com/10/25/21/logo-construction-organization-png-favpng-ZtdSc1gg1SR8tqCbzaf5eKZvK.jpg);
 }
