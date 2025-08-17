@@ -172,7 +172,7 @@ html, body {
   background: var(--background-color);
   display: flex;
   flex-direction: row;
-  height: 42vh;
+  height: 50vh;
 }
 
 .featured-schools {
@@ -185,29 +185,12 @@ html, body {
   flex: 3;
   flex-direction: column;
   justify-content: center;
-  background-color: aqua;
-}
-
-.featured-count {
-  display: flex;
-  flex: 2;
-  align-items: center;
-  justify-content: center;
-  width: 22vw;
-  height: 42vh;
-  background: url("https://t3.ftcdn.net/jpg/16/09/43/08/360_F_1609430888_6rMPLvfDSG2JeDCsqIhvyJ4HvL5P0M9X.png") center/cover no-repeat; /*I need to download this photo into the folder*/
 }
 
 .featured-text {
   color: var(--black);
   font-family: var(--font-family-main);
-  font-size: 2.3rem;
-  font-weight: bold;
-}
-
-.featured-number {
-  font-family: var(--font-family-cursive);
-  font-size: 5rem;
+  font-size: 2.5vw;
   font-weight: bold;
 }
 
@@ -224,11 +207,28 @@ html, body {
   text-decoration: none;
 }
 
+.featured-count {
+  display: flex;
+  flex: 1.5;
+  align-items: center;
+  justify-content: center;
+  width: 25vw;
+  height: 50vh;
+  background: url("https://t3.ftcdn.net/jpg/16/09/43/08/360_F_1609430888_6rMPLvfDSG2JeDCsqIhvyJ4HvL5P0M9X.png") center/cover no-repeat; /*I need to download this photo into the folder*/
+  background-size: 30vw;
+}
+
+.featured-number {
+  font-family: var(--font-family-cursive);
+  font-size: 6vw;
+  font-weight: bold;
+}
+
 /* ======= Carousel Section ======= */
 .carousel-container {
   position: relative;
   width: 34vw;
-  height: 42vh;
+  height: 50vh;
   background: url("C:/Users/Naman/Downloads/CODE/Career Compass/Images/background.png") center/cover no-repeat;
   overflow: hidden;
 
@@ -249,7 +249,7 @@ html, body {
 }
 
 .carousel-slide img {
-  max-width: 100%;
+  max-width: 50%;
   max-height: 80%;
   object-fit: contain;
   filter: drop-shadow(0 5px 10px rgba(0,0,0,0.5));
