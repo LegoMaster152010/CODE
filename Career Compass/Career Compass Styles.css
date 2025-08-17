@@ -185,7 +185,6 @@ html, body {
   flex: 3;
   flex-direction: column;
   justify-content: center;
-  background: blue;
 }
 
 .featured-count {
@@ -229,7 +228,7 @@ html, body {
 /* ======= Carousel Section ======= */
 .carousel-container {
   position: relative;
-  width: 65vh;
+  width: 60vh;
   height: 42vh;
   background: url("C:/Users/Naman/Downloads/CODE/Career Compass/Images/background.png") center/cover no-repeat;
   overflow: hidden;
