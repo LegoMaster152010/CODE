@@ -185,18 +185,17 @@ html, body {
   flex: 3;
   flex-direction: column;
   justify-content: center;
+  background-color: aqua;
 }
 
 .featured-count {
   display: flex;
+  flex: 2;
   align-items: center;
   justify-content: center;
   width: 22vw;
   height: 42vh;
   background: url("https://t3.ftcdn.net/jpg/16/09/43/08/360_F_1609430888_6rMPLvfDSG2JeDCsqIhvyJ4HvL5P0M9X.png") center/cover no-repeat; /*I need to download this photo into the folder*/
-}
-.featured-image {
-  width: 700px;
 }
 
 .featured-text {
@@ -228,7 +227,7 @@ html, body {
 /* ======= Carousel Section ======= */
 .carousel-container {
   position: relative;
-  width: 60vh;
+  width: 34vw;
   height: 42vh;
   background: url("C:/Users/Naman/Downloads/CODE/Career Compass/Images/background.png") center/cover no-repeat;
   overflow: hidden;
