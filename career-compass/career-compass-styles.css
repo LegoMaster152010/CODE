@@ -48,8 +48,7 @@ html, body {
   flex: 1;
   list-style: none;
   justify-content: center;
-  margin: 0 -30px 0 25px;
-  gap: 10%;
+  gap: 2vw;
 }
 
 .navbar-links li a {
@@ -77,7 +76,7 @@ html, body {
   font-family: var(--font-family-main);
   font-size: 1.3rem;
   font-weight: 650;
-  margin-right: 15px;
+  margin-right: 1%;
   padding: 15px 40px;
   text-decoration: none;
 }
@@ -189,7 +188,7 @@ html, body {
   font-family: var(--font-family-main);
   font-size: 2.5vw;
   font-weight: bold;
-  margin-bottom: -23%;
+  margin-bottom: -1%;
 }
 
 .featured-description {
@@ -267,41 +266,36 @@ html, body {
 }
 
 /* ======= All Might Easter Egg ======= */
+/* === Hover Text === */
 .hover-text {
-  position: relative;
+  position: relative;   /* so the head can be absolutely positioned */
   display: inline-block;
-  cursor: pointer;
-  padding-top: 10vw; /* space for hidden mask above words */
   font-weight: bold;
+  cursor: pointer;
 }
 
-/* Invisible slit mask positioned above the text */
+/* === Head container === */
 .character-head {
   position: absolute;
-  top: 0; 
+  bottom: 100%;         /* places the head directly above the text */
   left: 50%;
-  width: 80px;       /* same width as image */
-  height: 0;         /* collapsed by default */
-  overflow: hidden;  /* hides image until hover */
   transform: translateX(-50%);
-  z-index: 1;
+  width: 80px;          /* match to image size */
+  height: 100px;        /* fixed height so no "bouncing" */
+  overflow: hidden;     /* hides the part of the head offscreen */
 }
 
-/* The image starts below the slit */
+/* === Head image === */
 .character-head img {
   position: absolute;
-  bottom: -100%;     /* fully hidden */
+  bottom: -100%;        /* fully hidden below container */
   left: 0;
-  width: 80px;
+  width: 100%;
   height: auto;
-  transition: bottom 0.6s ease-in-out;
+  transition: bottom 0.6s ease-in-out; /* smooth slide */
 }
 
-/* On hover → reveal the top of the head */
-.hover-text:hover .character-head {
-  height: 10vw;      /* "slit opening" height */
-}
-
+/* === Hover action === */
 .hover-text:hover .character-head img {
-  bottom: 0;         /* rises up until resting on the slit */
+  bottom: 0;            /* slides fully into view */
 }
