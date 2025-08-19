@@ -189,6 +189,15 @@ html, body {
   font-family: var(--font-family-main);
   font-size: 2.5vw;
   font-weight: bold;
+  margin-bottom: -23%;
+}
+
+.featured-description {
+  color: var(--black);
+  font-family: var(--font-family-main);
+  font-size: 1.5vw;
+  margin-bottom: 5%;
+  text-align: center;
 }
 
 .featured-button {
@@ -255,4 +264,46 @@ html, body {
 
 .carousel-slide img:hover {
   transform: scale(1.05);
+}
+
+
+
+
+.hover-text {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  padding-top: 10vw; /* space for hidden mask above words */
+  font-weight: bold;
+}
+
+/* Invisible slit mask positioned above the text */
+.character-head {
+  position: absolute;
+  top: 0; 
+  left: 50%;
+  width: 80px;       /* same width as image */
+  height: 0;         /* collapsed by default */
+  overflow: hidden;  /* hides image until hover */
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+/* The image starts below the slit */
+.character-head img {
+  position: absolute;
+  bottom: -100%;     /* fully hidden */
+  left: 0;
+  width: 80px;
+  height: auto;
+  transition: bottom 0.6s ease-in-out;
+}
+
+/* On hover → reveal the top of the head */
+.hover-text:hover .character-head {
+  height: 10vw;      /* "slit opening" height */
+}
+
+.hover-text:hover .character-head img {
+  bottom: 0;         /* rises up until resting on the slit */
 }
