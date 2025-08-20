@@ -106,31 +106,32 @@ html, body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  min-height: 50vh;
+  height: 30vw; /* 👈 adjust this and image will follow */
   padding: 0;
-  box-sizing: border-box;
   margin: 0;
+  box-sizing: border-box;
 }
 
 .hero-image-container {
-  align-items: center;
+  flex: 0 0 60%;
   display: flex;
-  flex: 0 0 65%;
+  align-items: stretch;   /* makes child fill vertically */
   justify-content: center;
+  height: 100%;           /* match hero-section */
 }
 
 .hero-image {
-  display: block;
-  height: 100%;
-  object-fit: cover;
   width: 100%;
+  height: 100%;
+  object-fit: cover;       /* fills container, edges touch top/bottom */
+  display: block;
 }
 
 .hero-text {
   align-items: flex-start;
   display: flex;
   flex-direction: column;
-  flex: 0 0 35%;
+  flex: 0 0 40%;
   justify-content: center;
   padding: 50px;
   box-sizing: border-box;
@@ -139,14 +140,14 @@ html, body {
 .hero-text h1 {
   color: var(--black);
   font-family: "Roboto", sans-serif;
-  font-size: 3rem;
+  font-size: 3vw;
   margin-bottom: 20px;
 }
 
 .hero-text p {
   color: var(--black);
   font-family: "Roboto", sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.5vw;
   margin-bottom: 30px;
 }
 
@@ -162,7 +163,7 @@ html, body {
 .welcome-banner-text {
   color: var(--white);
   font-family: var(--font-family-cursive);
-  font-size: 3.8vh;
+  font-size: 2.2vw;
   margin: 0;
   text-align: center;
 }
@@ -206,9 +207,9 @@ html, body {
   color: var(--white);
   cursor: pointer;
   font-family: var(--font-family-main);
-  font-size: 1.5rem;
+  font-size: 1.5vw;
   font-weight: 650;
-  padding: 15px 40px;
+  padding: 1.6vw 3.5vw;
   text-decoration: none;
 }
 
