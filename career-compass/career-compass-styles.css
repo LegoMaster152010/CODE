@@ -173,7 +173,8 @@ html, body {
   background: var(--background-color);
   display: flex;
   flex-direction: row;
-  height: 50vh;
+  margin: 4vh 0;
+  height: auto;
 }
 
 .featured-info {
@@ -219,8 +220,8 @@ html, body {
   align-items: center;
   justify-content: center;
   width: 25vw;
-  height: 50vh;
-  background: url("images/featured-number-background.png") center/cover no-repeat;
+  height: vh;
+  background: url("images/featured-section/featured-number-background.png") center/cover no-repeat;
   background-size: 30vw;
 }
 
@@ -233,11 +234,11 @@ html, body {
 /* ======= Carousel Section ======= */
 .carousel-container {
   position: relative;
-  width: 34vw;
-  height: 50vh;
-  background: url("images/featured-carousel-background.png") center/contain no-repeat;
+  height: 100%;
+  background: url("images/featured-section/featured-carousel-background.png") center/contain no-repeat;
   overflow: hidden;
-
+  background-color: red;
+  flex: 2.5
 }
 
 .carousel-track {
@@ -329,4 +330,9 @@ html, body {
   font-family: var(--font-family-main);
   font-size: 1.5vw;
   text-align: center;
+}
+
+.overview-image {
+  max-width: 10%;
+  height: auto;
 }
