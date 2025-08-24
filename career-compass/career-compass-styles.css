@@ -31,7 +31,8 @@ html, body {
 .navbar-logo {
   height: 3.6vw;
   width: auto;
-  margin: 5vw 2vw 5vw 1.6vw;
+  margin: 5vw 2vw 5vw 0;
+  padding: 0;
   background-image: url("https://icons-for-free.com/iff/png/256/compass-131994967719933980.png") cover/contain no-repeat;
 }
 
