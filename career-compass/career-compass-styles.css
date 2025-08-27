@@ -425,3 +425,44 @@ html, body {
 #step-3 { background-color: #7ed957; }
 #step-4 { background-color: #38b6ff; }
 #step-5 { background-color: #004aad; }
+#success { background-color: #5e17eb; }
+
+/* === Success Step === */
+.success {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex: 1;
+}
+
+.success-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 4;
+  min-height: 7vw;
+  text-align: center;
+}
+
+.success-description h3 {
+  margin: 0 0 0.5vw 0;
+  font-size: 2.5vw;
+  font-weight: bold;
+  color: white;
+  font-family: var(--font-family-main);
+}
+
+.success-description p {
+  margin: 0;
+  font-size: 1.5vw;
+  color: white;
+  font-family: var(--font-family-main);
+}
+
+.star {
+  font-size: 6vw;
+  color: gold;
+
+}
