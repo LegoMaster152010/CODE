@@ -13,6 +13,46 @@ html, body {
   background-color: var(--background-color);
 }
 
+/* ======= Main ======= */
+.title {
+  color: var(--black);
+  font-family: var(--font-family-main);
+  font-size: 2.5vw;
+  font-weight: bold;
+  margin-bottom: -1%;
+  text-align: center;
+}
+
+.description {
+  color: var(--black);
+  font-family: var(--font-family-main);
+  font-size: 1.5vw;
+  text-align: center;
+  margin-bottom: 0.5%;
+}
+
+.button {
+  background-color: var(--primary-color);
+  border: none;
+  border-radius: 0.6vw;
+  color: var(--white);
+  cursor: pointer;
+  font-family: var(--font-family-main);
+  font-size: 1.5vw;
+  font-weight: 650;
+  padding: 1.6vw 3.5vw;
+  text-decoration: none;
+  margin: auto;
+}
+
+.button:hover {
+  background-color: var(--white);
+}
+
+.white {
+  color: var(--white);
+}
+
 /* ======= Navbar ======= */
 .navbar {
   display: flex;
@@ -186,33 +226,8 @@ html, body {
   justify-content: center;
 }
 
-.featured-text {
-  color: var(--black);
-  font-family: var(--font-family-main);
-  font-size: 2.5vw;
-  font-weight: bold;
-  margin-bottom: -1%;
-}
-
-.featured-description {
-  color: var(--black);
-  font-family: var(--font-family-main);
-  font-size: 1.5vw;
+#featured-description {
   margin-bottom: 5%;
-  text-align: center;
-}
-
-.featured-button {
-  background-color: var(--primary-color);
-  border: none;
-  border-radius: 0.6vw;
-  color: var(--white);
-  cursor: pointer;
-  font-family: var(--font-family-main);
-  font-size: 1.5vw;
-  font-weight: 650;
-  padding: 1.6vw 3.5vw;
-  text-decoration: none;
 }
 
 .featured-count {
@@ -402,6 +417,7 @@ html, body {
   flex: 1;
   min-height: 7vw;
   text-align: center;
+  margin-right: 8vw;
 }
 
 .how-it-works-description h3 {
@@ -465,4 +481,24 @@ html, body {
   font-size: 6vw;
   color: gold;
 
+}
+
+/* ======= Call to Action ======= */
+.call-to-action {
+  text-align: center;
+  margin: 4% 0 5% 0;
+}
+
+#cta-title {
+  font-size: 3vw;
+}
+
+#cta-button {
+  font-size: 1.7vw;
+  padding: 1.5vw 10vw;
+}
+
+#cta-description {
+  font-size: 1.5vw;
+  margin: 2% 0 3% 0;;
 }
