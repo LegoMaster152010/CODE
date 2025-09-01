@@ -506,3 +506,43 @@ html, body {
   font-size: 1.5vw;
   margin: 2% 0 3% 0;
 }
+
+/* ====== Footer ====== */
+.footer {
+  display: flex;
+  background-color: var(--primary-color);
+}
+
+#footer-logo {
+  max-width: 20px;
+  height: auto;
+}
+
+.footer-section {
+  flex: 1;
+  padding: 2vw;
+  text-align: left;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-link {
+  color: var(--white);
+  text-decoration: none;
+}
+
+.footer-title {
+  color: var(--white);
+  font-family: var(--font-family-main);
+  font-size: 2vw;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: white;
+  font-family: var(--font-family-main);
+  font-size: 1.5vw;
+}
