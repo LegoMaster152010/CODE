@@ -513,11 +513,6 @@ html, body {
   background-color: var(--primary-color);
 }
 
-#footer-logo {
-  max-width: 20px;
-  height: auto;
-}
-
 .footer-section {
   flex: 1;
   padding: 2vw;
@@ -545,4 +540,56 @@ html, body {
   color: white;
   font-family: var(--font-family-main);
   font-size: 1.5vw;
+}
+
+#main-footer-title {
+  font-size: 2.5vw;
+  font-weight: 700;
+  color: var(--white);
+  margin: 0;
+  font-family: var(--font-family-main);
+}
+
+#main-footer-section {
+  flex: 1.7;
+  padding: 2vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+#main-footer-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1vw;
+}
+
+#footer-logo {
+  width: auto;
+  height: 3vw;
+  margin-right: 1vw;
+}
+
+#main-footer-section p {
+  margin-top: 0;
+  margin-bottom: 0;
+  color: var(--background-color);
+  font-size: 1.7vw;
+  font-family: var(--font-family-main);
+}
+
+#footer-socials {
+  display: flex;
+  margin-top: 1vw;
+  align-items: center;
+}
+
+#footer-socials img {
+  width: 2.5vw;
+  height: auto;
+  margin-right: 1vw;
+  filter: invert(1); /* makes icons white */
+  cursor: pointer;
 }
