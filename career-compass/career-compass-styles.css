@@ -7,13 +7,14 @@
   --font-family-cursive: "Playwrite AU QLD", cursive;
 }
 
+/* ======= Base ======= */
 html, body {
   margin: 0;
   padding: 0;
   background-color: var(--background-color);
 }
 
-/* ======= Main ======= */
+/* ======= Typography ======= */
 .title {
   color: var(--black);
   font-family: var(--font-family-main);
@@ -31,26 +32,39 @@ html, body {
   margin-bottom: 0.5%;
 }
 
-.button {
+.white { color: var(--white); }
+
+/* ======= Buttons ======= */
+.button,
+.login-btn {
   background-color: var(--primary-color);
   border: none;
   border-radius: 0.6vw;
   color: var(--white);
   cursor: pointer;
   font-family: var(--font-family-main);
-  font-size: 1.5vw;
   font-weight: 650;
-  padding: 1.6vw 3.5vw;
   text-decoration: none;
+  transition: filter 0.2s;
+}
+
+.button {
+  font-size: 1.5vw;
+  padding: 1.6vw 3.5vw;
   margin: auto;
 }
 
-.button:hover {
+.button:hover,
+.login-btn:hover {
   filter: brightness(0.85);
 }
 
-.white {
-  color: var(--white);
+.login-btn {
+  background-color: var(--white);
+  color: var(--black);
+  font-size: 1.3vw;
+  margin-right: 1%;
+  padding: 1vw 2.4vw;
 }
 
 /* ======= Navbar ======= */
@@ -73,7 +87,9 @@ html, body {
   width: auto;
   margin: 5vw 2vw 5vw 0;
   padding: 0;
-  background-image: url("https://icons-for-free.com/iff/png/256/compass-131994967719933980.png") cover/contain no-repeat;
+  background-image: url("https://icons-for-free.com/iff/png/256/compass-131994967719933980.png");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .navbar-title a {
@@ -108,42 +124,24 @@ html, body {
   color: var(--black);
 }
 
-.login-btn {
-  background-color: var(--white);
-  border: none;
-  border-radius: 0.6vw;
-  color: var(--black);
-  cursor: pointer;
-  font-family: var(--font-family-main);
-  font-size: 1.3vw;
-  font-weight: 650;
-  margin-right: 1%;
-  padding: 1vw 2.4vw;
-  text-decoration: none;
-}
-
-.login-btn:hover {
-  filter: brightness(0.85);
-}
-
 /* ======= Hamburger Menu ======= */
 .burger-menu {
-  align-items: center;
-  cursor: pointer;
   display: flex;
   flex-direction: column;
-  height: 50px;
+  align-items: center;
   justify-content: center;
-  margin: 0 25px 0 31px;
   width: 50px;
+  height: 50px;
+  cursor: pointer;
+  margin: 0 25px 0 31px;
 }
 
 .line {
+  width: 60px;
+  height: 5px;
   background: var(--white);
   border-radius: 4px;
-  height: 5px;
   margin: 6px 0;
-  width: 60px;
 }
 
 /* ======= Hero Section ======= */
@@ -151,7 +149,7 @@ html, body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 30vw; /* 👈 adjust this and image will follow */
+  height: 30vw;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -160,49 +158,49 @@ html, body {
 .hero-image-container {
   flex: 0 0 60%;
   display: flex;
-  align-items: stretch;   /* makes child fill vertically */
+  align-items: stretch;
   justify-content: center;
-  height: 100%;           /* match hero-section */
+  height: 100%;
 }
 
 .hero-image {
   width: 100%;
   height: 100%;
-  object-fit: cover;       /* fills container, edges touch top/bottom */
+  object-fit: cover;
   display: block;
 }
 
 .hero-text {
-  align-items: flex-start;
   display: flex;
   flex-direction: column;
   flex: 0 0 40%;
   justify-content: center;
+  align-items: flex-start;
   padding: 50px;
   box-sizing: border-box;
 }
 
 .hero-text h1 {
   color: var(--black);
-  font-family: "Roboto", sans-serif;
+  font-family: var(--font-family-main);
   font-size: 3vw;
   margin-bottom: 20px;
 }
 
 .hero-text p {
   color: var(--black);
-  font-family: "Roboto", sans-serif;
+  font-family: var(--font-family-main);
   font-size: 1.5vw;
   margin-bottom: 30px;
 }
 
 /* ======= Welcome Banner ======= */
 .welcome-banner {
-  align-items: center;
-  background-color: var(--primary-color);
   display: flex;
-  padding: 1vh 0;
+  align-items: center;
   justify-content: center;
+  background-color: var(--primary-color);
+  padding: 1vh 0;
 }
 
 .welcome-banner-text {
@@ -215,18 +213,18 @@ html, body {
 
 /* ======= Featured Schools Section ======= */
 .featured-section {
-  background: var(--background-color);
   display: flex;
   flex-direction: row;
+  background: var(--background-color);
   margin: 4vh 0;
   height: auto;
 }
 
 .featured-info {
-  align-items: center;
   display: flex;
   flex: 3;
   flex-direction: column;
+  align-items: center;
   justify-content: center;
 }
 
@@ -240,7 +238,6 @@ html, body {
   align-items: center;
   justify-content: center;
   width: 25vw;
-  height: vh;
   background: url("images/featured-section/featured-number-background.png") center/cover no-repeat;
   background-size: 30vw;
 }
@@ -286,38 +283,34 @@ html, body {
 }
 
 /* ======= All Might Easter Egg ======= */
-/* === Hover Text === */
 .hover-text {
-  position: relative;   /* so the head can be absolutely positioned */
+  position: relative;
   display: inline-block;
   font-weight: bold;
   cursor: pointer;
 }
 
-/* === Head container === */
 .character-head {
   position: absolute;
-  bottom: 100%;         /* places the head directly above the text */
+  bottom: 100%;
   left: 50%;
   transform: translateX(-50%);
-  width: 80px;          /* match to image size */
-  height: 100px;        /* fixed height so no "bouncing" */
-  overflow: hidden;     /* hides the part of the head offscreen */
+  width: 80px;
+  height: 100px;
+  overflow: hidden;
 }
 
-/* === Head image === */
 .character-head img {
   position: absolute;
-  bottom: -100%;        /* fully hidden below container */
+  bottom: -100%;
   left: 0;
   width: 100%;
   height: auto;
-  transition: bottom 0.6s ease-in-out; /* smooth slide */
+  transition: bottom 0.6s ease-in-out;
 }
 
-/* === Hover action === */
 .hover-text:hover .character-head img {
-  bottom: 0;            /* slides fully into view */
+  bottom: 0;
 }
 
 /* ======= Overview Section ======= */
@@ -356,13 +349,12 @@ html, body {
 }
 
 /* ======= How It Works Section ======= */
-/* === How It Works Banner === */
 .how-it-works-banner {
-  align-items: center;
-  background-color: var(--primary-color);
   display: flex;
-  padding: 1vh 0;
+  align-items: center;
   justify-content: center;
+  background-color: var(--primary-color);
+  padding: 1vh 0;
 }
 
 .how-it-works-banner h2 {
@@ -370,22 +362,21 @@ html, body {
   font-family: var(--font-family-cursive);
   font-size: 2vw;
   margin: 0;
-  text-align: center; 
-}
-
- .divider {
-  width: 90%; /* 👈 adjust length of line */
-  height: 2px;
-  background-color: var(--white);
-  margin: 0vh auto; /* centers it with spacing */
+  text-align: center;
 }
 
 .divider-container {
-  background-color: #0f0fb0;
+  background-color: var(--primary-color);
   padding: 1vh 0;
 }
 
-/* === How It Works Section === */
+.divider {
+  width: 90%;
+  height: 2px;
+  background-color: var(--white);
+  margin: 0 auto;
+}
+
 .how-it-works {
   background: var(--background-color);
   padding: 0 1vw;
@@ -403,7 +394,7 @@ html, body {
   width: 7vw;
   height: 7vw;
   border-radius: 50%;
-  background: white;
+  background: var(--white);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -428,18 +419,18 @@ html, body {
   margin: 0 0 0.5vw 0;
   font-size: 2.5vw;
   font-weight: bold;
-  color: white;
+  color: var(--white);
   font-family: var(--font-family-main);
 }
 
 .how-it-works-description p {
   margin: 0;
   font-size: 1.5vw;
-  color: white;
+  color: var(--white);
   font-family: var(--font-family-main);
 }
 
-/* === Step Colors === */
+/* Step Colors */
 #step-1 { background-color: #ff3f1f; }
 #step-2 { background-color: #ff7e2f; }
 #step-3 { background-color: #7ed957; }
@@ -447,7 +438,7 @@ html, body {
 #step-5 { background-color: #004aad; }
 #success { background-color: #5e17eb; }
 
-/* === Success Step === */
+/* Success Step */
 .success {
   display: flex;
   flex-direction: row;
@@ -470,21 +461,19 @@ html, body {
   margin: 0 0 0.5vw 0;
   font-size: 2.5vw;
   font-weight: bold;
-  color: white;
+  color: var(--white);
   font-family: var(--font-family-main);
 }
 
 .success-description p {
   margin: 0;
   font-size: 1.5vw;
-  color: white;
+  color: var(--white);
   font-family: var(--font-family-main);
 }
 
 .star {
   font-size: 6vw;
-  color: gold;
-
 }
 
 /* ======= Call to Action ======= */
@@ -493,21 +482,11 @@ html, body {
   margin: 4% 0 5% 0;
 }
 
-#cta-title {
-  font-size: 3vw;
-}
+#cta-title { font-size: 3vw; }
+#cta-button { font-size: 1.7vw; padding: 1.5vw 10vw; }
+#cta-description { font-size: 1.5vw; margin: 2% 0 3% 0; }
 
-#cta-button {
-  font-size: 1.7vw;
-  padding: 1.5vw 10vw;
-}
-
-#cta-description {
-  font-size: 1.5vw;
-  margin: 2% 0 3% 0;
-}
-
-/* ====== Footer ====== */
+/* ======= Footer ======= */
 .footer {
   display: flex;
   background-color: var(--primary-color);
@@ -537,7 +516,7 @@ html, body {
 
 .footer-links a {
   text-decoration: none;
-  color: white;
+  color: var(--white);
   font-family: var(--font-family-main);
   font-size: 1.5vw;
 }
@@ -580,16 +559,61 @@ html, body {
   font-family: var(--font-family-main);
 }
 
+/* ======= Footer Socials ======= */
 #footer-socials {
   display: flex;
-  margin-top: 1vw;
+  justify-content: center;
   align-items: center;
+  padding: 0;
+  margin: 0;
 }
 
-#footer-socials img {
-  width: 2.5vw;
-  height: auto;
-  margin-right: 1vw;
-  filter: invert(1); /* makes icons white */
-  cursor: pointer;
+#footer-socials a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5em;
+  height: 2.5em;
+  color: var(--white);
+  text-decoration: none;
+  font-size: 2em;
+  margin: 0;
+  padding: 0;
+  transition: color 0.25s, transform 0.15s;
 }
+
+#footer-socials i {
+  margin: 0;
+  padding: 0;
+  font-size: 1em;
+  line-height: 1;
+  vertical-align: middle;
+}
+
+#footer-socials a:hover,
+#footer-socials a:focus-visible {
+  transform: translateY(-2px);
+  outline: none;
+}
+
+.footer .footer-section:last-child {
+  text-align: center;
+}
+
+.footer .footer-section:last-child #footer-socials {
+  justify-content: center;
+}
+
+/* Brand hover colors */
+#footer-socials a[href*="facebook"]:hover,
+#footer-socials a[href*="facebook"]:focus-visible { color: #1877f2; }
+
+
+#footer-socials a[href*="x.com"]:hover,
+#footer-socials a[href*="x.com"]:focus-visible { color: var(--black); }
+
+#footer-socials a[href*="instagram"]:hover,
+#footer-socials a[href*="instagram"]:focus-visible { color: #E1306C; }
+
+#footer-socials a[href*="linkedin"]:hover,
+#footer-socials a[href*="linkedin"]:focus-visible { color: #0077B5; }

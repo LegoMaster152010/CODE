@@ -11,11 +11,13 @@
     <meta name="theme-color" content="#0f0fb0" />   
 
     <!-- Linked Resources -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="career-compass-styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playwrite+AU+QLD:wght@100..400&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="icon" href="images/logo.png" type="image/png">
+    
 
     <!-- Facebook -->
     <meta property="og:type" content="website" />
@@ -41,9 +43,9 @@
             </div>
 
             <ul class="navbar-section navbar-links">
-                <li><a href="Career Picker.html" style="white-space: nowrap;">Career Picker</a></li>
-                <li><a href="Course Creator.html" style="white-space: nowrap;">Course Creator</a></li>
-                <li><a href="Class Catalog.html" style="white-space: nowrap;">Class Catalog</a></li>
+                <li><a href="career-picker.html" style="white-space: nowrap;">Career Picker</a></li>
+                <li><a href="course-creator.html" style="white-space: nowrap;">Course Creator</a></li>
+                <li><a href="class-catalog.html" style="white-space: nowrap;">Class Catalog</a></li>
             </ul>
 
             <a href="login.html" class="login-btn">LOGIN</a>
@@ -224,10 +226,19 @@
 
             <div class="footer-section">
                 <h4 class="footer-title">Stay Connected</h4>
-                <div id="footer-socials">
-                    <img src="Facebook">
-                    <img src="X">
-                    <img src="Instagram">
+                <div id="footer-socials" aria-label="Career Compass social links">
+                    <a href="https://facebook.com/yourpage" target="_blank" rel="noopener noreferrer" aria-label="Facebook" title="Facebook">
+                        <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://x.com/yourprofile" target="_blank" rel="noopener" aria-label="X">
+                      <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+                    <a href="https://instagram.com/yourhandle" target="_blank" rel="noopener noreferrer" aria-label="Instagram" title="Instagram">
+                        <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" title="LinkedIn">
+                        <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
+                    </a>
                 </div>
             </div>
 
@@ -238,20 +249,10 @@
         </div>
 
         <footer class="footer-bottom">
-            <div class="">
+            <p>© 2025 Career Compass. All rights reserved.</p>
+            <p>Built for students, powered by AI.</p>
         </footer>
 
     </main>
 </body>
 </html>
-
-<!--1334 pixels is the smallest width before I need a collapsable navbar-->
-<!--
-    <div class="burger-menu">
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
-    </div> 
-
-Code for the burger menu dropdown still needs work
-            -->
