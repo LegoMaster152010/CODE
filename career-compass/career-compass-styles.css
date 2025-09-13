@@ -1,6 +1,4 @@
 :root {
-
-
   --background-color: #fefbf3;
   --primary-color: #0f0fb0;
   --white: #ffffff;
@@ -10,7 +8,8 @@
 }
 
 /* ======= Base ======= */
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
   background-color: var(--background-color);
@@ -34,7 +33,9 @@ html, body {
   margin-bottom: 0.5%;
 }
 
-.white { color: var(--white); }
+.white {
+  color: var(--white);
+}
 
 /* ======= Buttons ======= */
 .button,
@@ -239,7 +240,8 @@ html, body {
   align-items: center;
   justify-content: center;
   width: 25vw;
-  background: url("images/featured-section/featured-number-background.png") center/cover no-repeat;
+  background: url("images/featured-section/featured-number-background.png")
+    center/cover no-repeat;
   background-size: 30vw;
 }
 
@@ -252,7 +254,8 @@ html, body {
 /* ======= Carousel Section ======= */
 .carousel-container {
   position: relative;
-  background: url("images/featured-section/featured-carousel-background.png") center/contain no-repeat;
+  background: url("images/featured-section/featured-carousel-background.png")
+    center/contain no-repeat;
   overflow: hidden;
   flex: 2;
 }
@@ -271,7 +274,6 @@ html, body {
   align-items: center;
 }
 
-
 /* School Recommendation 
 #school-recommendation {
 
@@ -282,7 +284,7 @@ html, body {
   max-width: 65%;
   max-height: 90%;
   object-fit: contain;
-  filter: drop-shadow(0 5px 10px rgba(0,0,0,0.5));
+  filter: drop-shadow(0 5px 10px rgba(0, 0, 0, 0.5));
   transition: transform 0.3s;
 }
 
@@ -439,12 +441,24 @@ html, body {
 }
 
 /* Step Colors */
-#step-1 { background-color: #ff3f1f; }
-#step-2 { background-color: #ff7e2f; }
-#step-3 { background-color: #7ed957; }
-#step-4 { background-color: #38b6ff; }
-#step-5 { background-color: #004aad; }
-#success { background-color: #5e17eb; }
+#step-1 {
+  background-color: #ff3f1f;
+}
+#step-2 {
+  background-color: #ff7e2f;
+}
+#step-3 {
+  background-color: #7ed957;
+}
+#step-4 {
+  background-color: #38b6ff;
+}
+#step-5 {
+  background-color: #004aad;
+}
+#success {
+  background-color: #5e17eb;
+}
 
 /* Success Step */
 .success {
@@ -490,9 +504,17 @@ html, body {
   margin: 4% 0 5% 0;
 }
 
-#cta-title { font-size: 3vw; }
-#cta-button { font-size: 1.7vw; padding: 1.5vw 10vw; }
-#cta-description { font-size: 1.5vw; margin: 2% 0 3% 0; }
+#cta-title {
+  font-size: 3vw;
+}
+#cta-button {
+  font-size: 1.7vw;
+  padding: 1.5vw 10vw;
+}
+#cta-description {
+  font-size: 1.5vw;
+  margin: 2% 0 3% 0;
+}
 
 /* ======= Footer ======= */
 .footer {
@@ -618,20 +640,29 @@ html, body {
 
 /* Brand hover colors */
 #footer-socials a[href*="facebook"]:hover,
-#footer-socials a[href*="facebook"]:focus-visible { color: #1877f2; }
-
+#footer-socials a[href*="facebook"]:focus-visible {
+  color: #1877f2;
+}
 
 #footer-socials a[href*="x.com"]:hover,
-#footer-socials a[href*="x.com"]:focus-visible { color: var(--black); }
+#footer-socials a[href*="x.com"]:focus-visible {
+  color: var(--black);
+}
 
 #footer-socials a[href*="instagram"]:hover,
-#footer-socials a[href*="instagram"]:focus-visible { color: #E1306C; }
+#footer-socials a[href*="instagram"]:focus-visible {
+  color: #e1306c;
+}
 
 #footer-socials a[href*="linkedin"]:hover,
-#footer-socials a[href*="linkedin"]:focus-visible { color: #0077B5; }
+#footer-socials a[href*="linkedin"]:focus-visible {
+  color: #0077b5;
+}
 
 #footer-socials a[href*="github"]:hover,
-#footer-socials a[href*="github"]:focus-visible { color: var(--black); }
+#footer-socials a[href*="github"]:focus-visible {
+  color: var(--black);
+}
 
 /* ======= Footer Bottom ======= */
 .footer-bottom {
