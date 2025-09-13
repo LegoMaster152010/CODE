@@ -1,4 +1,6 @@
 :root {
+
+
   --background-color: #fefbf3;
   --primary-color: #0f0fb0;
   --white: #ffffff;
@@ -63,7 +65,6 @@ html, body {
   background-color: var(--white);
   color: var(--black);
   font-size: 1.3vw;
-  margin-right: 1%;
   padding: 1vw 2.4vw;
 }
 
@@ -269,6 +270,13 @@ html, body {
   justify-content: center;
   align-items: center;
 }
+
+
+/* School Recommendation 
+#school-recommendation {
+
+}
+*/
 
 .carousel-slide img {
   max-width: 65%;
@@ -508,6 +516,10 @@ html, body {
   text-decoration: none;
 }
 
+.footer-link:hover {
+  text-decoration: underline;
+}
+
 .footer-title {
   color: var(--white);
   font-family: var(--font-family-main);
@@ -572,8 +584,8 @@ html, body {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 2.5em;
-  height: 2.5em;
+  width: 6vw;
+  height: auto;
   color: var(--white);
   text-decoration: none;
   font-size: 2em;
@@ -621,7 +633,7 @@ html, body {
 #footer-socials a[href*="github"]:hover,
 #footer-socials a[href*="github"]:focus-visible { color: var(--black); }
 
-
+/* ======= Footer Bottom ======= */
 .footer-bottom {
   display: flex;
   justify-content: space-between;
